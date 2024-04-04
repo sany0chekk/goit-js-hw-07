@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 16px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*      INDEX     */
+
+.main-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  background-color: #e2e2e2;
+  border-radius: 10px;
+
+  padding: 20px;
+}
+
+.main-link {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+  padding: 10px 20px;
+  background-color: #bababa;
+  border-radius: 10px;
+  outline: none;
+  transition: background-color 0.2s ease-in;
+}
+
+.main-link:hover,
+.main-link:focus {
+  background-color: #cfcfcf;
+}
+
+/*      TASK-1      */
+#categories {
+  margin-top: 50px;
+}
+
+.item {
+  max-width: 392px;
+  background-color: #f6f6fe;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  margin-bottom: 16px;
+}
+
+.item li {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.item li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/*      TASK-2      */
+
+.gallery {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: calc((100% - 56px) / 3);
+  min-width: 360px;
+}
+
+/*      TASK-3      */
+.form-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 400px;
+}
+
+#name-input {
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/*      TASK-4      */
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 360px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form input {
+  padding: 0 16px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in;
+}
+
+.login-form input:hover {
+  border-color: #000;
+}
+
+.login-form button {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  max-width: 86px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in;
+
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+/*      TASK-5      */
+.widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widget p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-shadow: 0px 0px 5px #fff;
+  color: #2e2f42;
+
+  margin-bottom: 16px;
+}
+
+.change-color {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  border: none;
+
+  transition: background-color 0.2s ease-in;
+}
+
+.change-color:hover,
+.change-color:focus {
+  background-color: #6c8cff;
+}
+
+/*      TASK-6      */
+.controls-wrap {
+  max-width: 486px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#controls,
+#boxes {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 32px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#boxes {
+  max-height: 450px;
+  overflow: auto;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+#controls button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 8px 0;
+  width: 120px;
+  transition: background-color 0.2s ease-in;
+}
+
+[data-create] {
+  background-color: #4e75ff;
+}
+
+[data-create]:hover,
+[data-create]:focus {
+  background-color: #6c8cff;
+}
+
+[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+[data-destroy]:hover,
+[data-destroy]:focus {
+  background-color: #ff7070;
+}
