@@ -1,3 +1,5 @@
+"use strict";
+
 const box = document.querySelector("#boxes");
 const inputElements = document.querySelector("#number-boxes");
 const createElements = document.querySelector("[data-create]");
